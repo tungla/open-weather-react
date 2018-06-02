@@ -1,7 +1,31 @@
 .navbar {
-    background-color: dodgerblue
+    background-color: dodgerblue;
+    z-index:1;
 }
 
-#brand_name {
+.navbar > .container {
+    margin: 0;
+    padding:0;
+}
+
+#brand-name > a {
     color:white;
+}
+
+.header-item {
+    display: inline-block;
+}
+
+#navbar-logo > img {
+    height:100%;
+    width:100%;
+}
+
+#navbar-logo {
+    width:25%;
+    height:100%;
+}
+
+.navbar-brand {
+    padding:0;
 }

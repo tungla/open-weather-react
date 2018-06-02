@@ -31,3 +31,7 @@ body {
   background-image: url("weather-background.png");
   background-size: cover;
 }
+
+#city-search-box {
+    margin-left: 10%;
+}

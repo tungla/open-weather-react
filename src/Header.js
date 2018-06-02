@@ -4,6 +4,7 @@
 import React, { Component } from 'react';
 import {Navbar, Nav, NavDropdown, NavItem, MenuItem} from 'react-bootstrap';
 import './Header.css';
+import weather from './weather.svg';
 
 class Header extends Component {
     render() {
@@ -11,7 +12,12 @@ class Header extends Component {
             <Navbar>
                 <Navbar.Header>
                     <Navbar.Brand>
-                        <a id = 'brand_name' href="#home">Open weather</a>
+                        <div id='navbar-logo' className='header-item'>
+                            <img src={weather}></img>
+                        </div>
+                        <div className='header-item' id='brand-name'> 
+                            <a href="#home">Open weather</a>
+                        </div>
                     </Navbar.Brand>
                 </Navbar.Header>
             </Navbar>

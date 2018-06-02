@@ -41,7 +41,7 @@ class CitySearchBox extends Component {
 
     render() {
         return(
-            <div className="container">
+            <div className="container" id='city-search-box'>
                 <CitySearchBar
                     onSearchSubmit={this.onSearchSubmit}
                     handleSearchInputChange={this.handleSearchInputChange}
