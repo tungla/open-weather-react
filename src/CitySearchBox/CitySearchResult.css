@@ -1,0 +1,14 @@
+#city-search-result {
+    margin-top: 5%;
+}
+
+#city-name, #city-temp {
+    float:left;
+}
+
+#city-name, #city-temp, #error-msg {
+    font-size: 30px;
+    color: white;
+    text-align: left;
+    margin: 1%;
+}
