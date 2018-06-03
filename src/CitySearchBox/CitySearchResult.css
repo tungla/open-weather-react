@@ -6,7 +6,7 @@
     float:left;
 }
 
-#city-name, #city-temp, #error-msg {
+#city-name, #city-temp, #error-msg, #city-humidity, #city-windspeed {
     font-size: 30px;
     color: white;
     text-align: left;
@@ -16,4 +16,13 @@
 #city-icon {
     width: 4%;
     height: 4%;
+}
+
+#temperature-icon, #humidity-icon, #windspeed-icon {
+    width: 25%;
+    height: 25%;
+}
+
+#windspeed-icon {
+    padding-right: 2%;
 }

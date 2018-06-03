@@ -10,7 +10,7 @@ class CitySearchBox extends Component {
         super(props);
         this.onSearchSubmit = this.onSearchSubmit.bind(this);
         this.handleSearchInputChange = this.handleSearchInputChange.bind(this);
-        this.state = {data: 'false', searchInput: '', main: ''};
+        this.state = {data: 'false', searchInput: '', main: '', wind: ''};
     }
 
     onSearchSubmit() {
@@ -28,7 +28,7 @@ class CitySearchBox extends Component {
             .then(response => response.json())
             .then(json =>{
                 console.log(json);
-                this.setState({ data: json, main: json.main })
+                this.setState({ data: json, main: json.main, wind: json.wind })
             })
             .catch(error => {
                 console.log(error.message);
@@ -49,6 +49,8 @@ class CitySearchBox extends Component {
                 <CitySearchResult
                     cityName={this.state.data.name}
                     temp={this.state.main.temp}
+                    humidity={this.state.main.humidity}
+                    windSpeed={this.state.wind.speed}
                 />
             </div>
         );
