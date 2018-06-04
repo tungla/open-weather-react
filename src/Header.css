@@ -3,6 +3,10 @@
     z-index:1;
 }
 
+.navbar-header {
+    margin-right: 0;
+}
+
 .navbar > .container {
     margin: 0;
     padding:0;
@@ -28,4 +32,8 @@
 
 .navbar-brand {
     padding:0;
+}
+
+.navbar {
+    height: 50px;
 }

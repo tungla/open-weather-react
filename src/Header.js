@@ -9,18 +9,16 @@ import weather from './weather.svg';
 class Header extends Component {
     render() {
         return(
-            <Navbar>
-                <Navbar.Header>
+                <nav className="navbar">
                     <Navbar.Brand>
                         <div id='navbar-logo' className='header-item'>
                             <img src={weather}></img>
                         </div>
-                        <div className='header-item' id='brand-name'> 
+                        <div className='header-item' id='brand-name'>
                             <a href="#home">Open weather</a>
                         </div>
                     </Navbar.Brand>
-                </Navbar.Header>
-            </Navbar>
+                </nav>
         );
     }
 }

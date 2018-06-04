@@ -25,22 +25,18 @@ class CitySearchBar extends Component {
 
     render() {
         return(
-            <form onSubmit={this.handleSearchSubmit}>
-                <div className="row">
-                    <div className="col-md-12 col-lg-12">
-                        <div id="custom-search-input">
-                            <div className="input-group col-md-12 col-lg-12">
-                                <input type="text" className="form-control input-lg" placeholder="City..." onChange={this.handleSearchInputChange}/>
-                                <span className="input-group-btn">
-                        <button className="btn btn-info btn-lg" type="button">
-                            <i className="glyphicon glyphicon-search"></i>
-                        </button>
-                    </span>
-                            </div>
+                <div className="row" id='city-search-box'>
+                    <form onSubmit={this.handleSearchSubmit}>
+                        <div id="custom-search-input" className="input-group">
+                            <input type="text" className="form-control input-lg" placeholder="City..." onChange={this.handleSearchInputChange}/>
+                            <span className="input-group-btn">
+                                <button className="btn btn-info btn-lg" type="button">
+                                    <i className="glyphicon glyphicon-search"></i>
+                                </button>
+                            </span>
                         </div>
-                    </div>
+                    </form>
                 </div>
-            </form>
         );
     }
 }

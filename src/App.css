@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 .App-logo {
@@ -32,6 +35,70 @@ body {
   background-size: cover;
 }
 
-#city-search-box {
+@media only screen and (max-width: 320px) {
+  #custom-search-input {
+    width: 70%;
+    margin-left: 20%;
+    margin-top: 10%;
+  }
+
+  .city-info, #city-search-result {
     margin-left: 10%;
+    margin-top: 5%;
+  }
+
+  .city-weather-info {
+    margin-left: 10%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #custom-search-input {
+    width: 70%;
+    margin-left: 10%;
+    margin-top: 5%;
+  }
+
+  .city-info, #city-search-result {
+    margin-left: 10%;
+    margin-top: 5%;
+  }
+
+  .city-weather-info {
+    margin-left: 10%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  #custom-search-input {
+    width: 70%;
+    margin-left: 10%;
+    margin-top: 5%;
+  }
+
+  .city-info, #city-search-result {
+    margin-left: 10%;
+    margin-top: 5%;
+  }
+
+  .city-weather-info {
+    margin-left: 10%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #custom-search-input {
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 5%;
+  }
+
+  .city-info, #city-search-result {
+    margin-left: 15%;
+    margin-top: 2%;
+  }
+
+  .city-weather-info {
+    margin-left: 15%;
+  }
 }

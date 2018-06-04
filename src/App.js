@@ -13,13 +13,11 @@ import {
 class App extends Component {
   render() {
     return (
-        <div className="App">
+        <div className="App container">
             <Header />
             <SideBar />
             <HashRouter>
-                <div>
-                    <Route exact path="/" component={CitySearchBox} />
-                </div>
+                <Route exact path="/" component={CitySearchBox} />
             </HashRouter>
         </div>
     );

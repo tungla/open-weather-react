@@ -1,7 +1,7 @@
 /**
  * Created by tung.vu on 6/1/2018.
  */
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import CitySearchBar from './CitySearchBar'
 import CitySearchResult from './CitySearchResult'
 
@@ -41,7 +41,7 @@ class CitySearchBox extends Component {
 
     render() {
         return(
-            <div className="container" id='city-search-box'>
+            <React.Fragment>
                 <CitySearchBar
                     onSearchSubmit={this.onSearchSubmit}
                     handleSearchInputChange={this.handleSearchInputChange}
@@ -52,7 +52,7 @@ class CitySearchBox extends Component {
                     humidity={this.state.main.humidity}
                     windSpeed={this.state.wind.speed}
                 />
-            </div>
+            </React.Fragment>
         );
     }
 }

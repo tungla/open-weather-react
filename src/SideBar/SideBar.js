@@ -15,12 +15,20 @@ class SideBar extends React.Component {
 
     render() {
         return (
-            <div class="sidenav">
+            <div class="sidenav row">
                 <div class='sidenav-items'>
-                    <a href="#">Current weather</a>
-                    <a href="#">Services</a>
-                    <a href="#">Clients</a>
-                    <a href="#">Contact</a>
+                    <div className="hvr-back-pulse">
+                        <a href="#">Current weather</a>
+                    </div>
+                    <div className="hvr-back-pulse">
+                        <a href="#">Current weather</a>
+                    </div>
+                    <div className="hvr-back-pulse">
+                        <a href="#">Current weather</a>
+                    </div>
+                    <div className="hvr-back-pulse">
+                        <a href="#">Current weather</a>
+                    </div>
                 </div>
             </div>
         );
