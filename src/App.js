@@ -13,12 +13,16 @@ import {
 class App extends Component {
   render() {
     return (
-        <div className="App container">
-            <Header />
-            <SideBar />
-            <HashRouter>
-                <Route exact path="/" component={CitySearchBox} />
-            </HashRouter>
+        <div className="App">
+            <div>
+                <Header />
+                <SideBar />
+            </div>
+            <div className="container" id="current-weather-search">
+                <HashRouter>
+                    <Route exact path="/" component={CitySearchBox} />
+                </HashRouter>
+            </div>
         </div>
     );
   }

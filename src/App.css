@@ -102,3 +102,7 @@ body {
     margin-left: 15%;
   }
 }
+
+#current-weather-search {
+  z-index: 0;
+}
