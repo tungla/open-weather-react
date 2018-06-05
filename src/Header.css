@@ -37,3 +37,8 @@
 .navbar {
     height: 50px;
 }
+
+#burger-menu {
+    background-color: dodgerblue;
+    border-color: white;
+}

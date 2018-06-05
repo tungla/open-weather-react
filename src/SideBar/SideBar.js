@@ -15,7 +15,7 @@ class SideBar extends React.Component {
 
     render() {
         return (
-            <div class="sidenav row">
+            <div class="sidenav collapse in width" id="sidebar">
                 <div class='sidenav-items'>
                     <div className="hvr-back-pulse">
                         <a href="#">Current weather</a>
@@ -27,7 +27,7 @@ class SideBar extends React.Component {
                         <a href="#">Current weather</a>
                     </div>
                     <div className="hvr-back-pulse">
-                        <a href="#">Current weather</a>
+                        <a href="#">Weather</a>
                     </div>
                 </div>
             </div>

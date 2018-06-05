@@ -11,11 +11,16 @@ class Header extends Component {
         return(
                 <nav className="navbar">
                     <Navbar.Brand>
+                        <div className='header-item'>
+                            <button className="btn" type="button" id="burger-menu" data-toggle="collapse" data-target="#sidebar">
+                                <i className="glyphicon glyphicon-menu-hamburger"></i>
+                            </button>
+                        </div>
                         <div id='navbar-logo' className='header-item'>
                             <img src={weather}></img>
                         </div>
                         <div className='header-item' id='brand-name'>
-                            <a href="#home">Open weather</a>
+                            <a href="#">Open weather</a>
                         </div>
                     </Navbar.Brand>
                 </nav>

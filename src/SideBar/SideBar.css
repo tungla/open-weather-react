@@ -15,7 +15,7 @@
     .sidenav a {
         padding: 6px 6px 6px 6px;
         text-decoration: none;
-        font-size: 1vw;
+        font-size: 2rem;
         color: white;
         font-weight: bold;  
         display: block;
@@ -51,6 +51,14 @@
     .sidenav {
         display: none;
     }
+}
+
+.collapse.width {
+    height: 100%;
+    -webkit-transition: width 0.5s linear;
+    -moz-transition: width 0.5s linear;
+    -o-transition: width 0.5s linear;
+    transition: width 0.5s linear;
 }
 
 /* Back Pulse */
